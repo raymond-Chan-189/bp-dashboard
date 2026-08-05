@@ -57,7 +57,7 @@ st.markdown(
 )
 
 # ==================== 读取数据 ====================
-FILE_PATH = r"C:\Users\Administrator\Desktop\周报分析\SC订单.xlsx"
+FILE_PATH = "SC订单.xlsx"
 
 if not os.path.exists(FILE_PATH):
     st.error(f"文件不存在：{FILE_PATH}")
@@ -792,7 +792,7 @@ with tab2:
 with tab3:
     st.markdown("**📦 库存库龄分析**")
     
-    path = "C:\\Users\\Administrator\\Desktop\\周报分析\\库存.xlsx"
+    path = "库存.xlsx"
     df_inv = pd.read_excel(path)
     
     bins = [-1, 90, 120, 180, float('inf')]
